@@ -1,0 +1,11 @@
+extends ../layouts/default
+
+block content
+	.contacts.view-port.main-padding
+		h1.contacts__title.main-title Ждём вас по адресу: Москва, ул. Покрышкина 8 к.3
+		.contacts__descr.special__descr Мы работаем ежедневно, пн-пт: 9:00-22:00, сб-вс: 10:00-20:00. Но по предварительной договорённости, можем дополнительно открыться в удобное для вас время. Приходите!
+		.contacts__phone Запись по телефону:
+			a.contacts__phone_link(href='tel:+74954381001') +7 495 438-10-01
+		.contacts__map.main-padding
+			#contacts-map
+		<script type="text/javascript">ymaps.ready(init);function init(){var myMap = new ymaps.Map("contacts-map", {center: [55.665264, 37.471866],zoom: 15});var myPlacemark = new ymaps.Placemark([55.665264, 37.471866], {hintContent: 'улица Покрышкина 8, к3',balloonContent: 'улица Покрышкина 8, к3'});myMap.geoObjects.add(myPlacemark);}</script>

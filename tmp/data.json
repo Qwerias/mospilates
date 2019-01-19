@@ -1,0 +1,115 @@
+{
+	"nav": [
+		{
+			"title": "Главная",
+			"href": "/"
+		},
+		{
+			"title": "Расписание",
+			"href": "../timetable/"
+		},
+		{
+			"title": "Программы",
+			"href": "../programs/"
+		},
+		{
+			"title": "Цены",
+			"href": "../prices/"
+		},
+		{
+			"title": "Тренеры",
+			"href": "../trainers/"
+		},
+		{
+			"title": "Специализация",
+			"href": "../special_men/"
+		},
+		{
+			"title": "Контакты",
+			"href": "../contacts/"
+		},
+		{
+			"title": "Диагностическая тренировка",
+			"href": "../rules/"
+		}
+	],
+	"timetable_box": [
+		{
+			"title": "11:00 Пилатес Реформер /Вика"
+		},
+		{
+			"title": "11:00 Body Art /Женя"
+		},
+		{
+			"title": "12:00 Йога /Вика"
+		},
+		{
+			"title": "12:30 Пилатес Реформер Tower"
+		},
+		{
+			"title": "13:00 Пилатес Circle /Женя"
+		},
+		{
+			"title": "14:00 Пилатес Реформер /Женя"
+		},
+		{
+			"title": "14:00 Пилатес Spinecorrector"
+		},
+		{
+			"title": "15:00 Motr /Юлиана"
+		},
+		{
+			"title": "16:00 Пилатес + OOV ARC /Елена"
+		},
+		{
+			"title": "16:30 Пилатес Реформер /Юлиана"
+		},
+		{
+			"title": "17:30 Стретчинг + МФР /Вика"
+		},
+		{
+			"title": "18:00 Реформер /Кристина"
+		},
+		{
+			"title": "19:00 Фуршет + Подарки"
+		}
+	],
+	"special_page_nav": [
+		{
+			"text": "Для мужчин",
+			"link": "../special_men/"
+		},
+		{
+			"text": "Для мужчин",
+			"link": "../special_men/"
+		},
+		{
+			"text": "Для мужчин",
+			"link": "../special_men/"
+		},
+		{
+			"text": "Для мужчин",
+			"link": "../special_men/"
+		},
+		{
+			"text": "Для беременных",
+			"link": "../special_pregnant/"
+		},
+		{
+			"text": "Коррекция фигуры",
+			"link": "../special_correction/"
+		},
+		{
+			"text": "Спортсменам",
+			"link": "../special_sport/"
+		},
+		{
+			"text": "Танцорам",
+			"link": "../special_dancers/"
+		},
+		{
+			"text": "При недержании",
+			"link": "../special_ups/"
+		}
+	]
+}

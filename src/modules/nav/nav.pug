@@ -1,0 +1,12 @@
+mixin nav(data)
+	nav.nav
+		ul.nav__list
+			each item, index in data
+				if index === data.length - 1
+					li.nav__item
+						a.nav__item_link.nav__item_link_small(href= item.href)= item.title
+							.nav__underline
+				else
+					li.nav__item
+						a.nav__item_link(href= item.href)= item.title
+							.nav__underline

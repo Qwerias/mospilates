@@ -1,0 +1,16 @@
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/nav/nav
+include ../modules/footer/footer
+
+doctype html
+html(lang='ru')
+	head
+		+head({title: 'Allegro'})
+
+	body
+		+header()
+
+		block content
+
+		+footer()

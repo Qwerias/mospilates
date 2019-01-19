@@ -1,0 +1,207 @@
+extends ../layouts/default
+
+include ../modules/icon/icon
+include ../modules/form/form
+
+block content
+	.invitation
+		.invitation__slide.invitation__slide--1
+			.invitation__content.view-port
+				h1.invitation__title Скидка 30% на
+					br
+					| первое посещение
+				.invitation__subtitle Скидка предоставляется при предварительной
+					br
+					| записи по телефону
+				.invitation__button.form-button Записаться
+		.invitation__slide.invitation__slide--2
+			.invitation__content.view-port
+				.invitation__right-container
+					h1.invitation__title Занимайтесь дешевле на 15%
+					.invitation__subtitle.invitation__subtitle--2 Скидка предоставляется при предварительной записи по телефону
+					.invitation__button.form-button Записаться
+		.invitation__slide.invitation__slide--3
+			.invitation__content.view-port
+				.invitation__title Новогодний праздник для тела!
+				.invitation__title.bold 23 декабря
+				.invitation__title Бесплатные тренировки и фуршет
+				.invitation__list
+					.invitation__list_item - пилатес
+					.invitation__list_item - йога
+					.invitation__list_item - миофасциальное расслабление
+					.invitation__list_item - диагностика опорно-двигательного аппарата
+				a.invitation__button(href="/december") Программа и запись
+		.invitation__slide.invitation__slide--4
+			.invitation__content.view-port
+				.invitation__title Внимание, друзья!
+				.invitation__subtitle.invitation__subtitle--2 Каждый понедельник в 9:00/10:00 и в 19:00 мы проводим уроки
+					br
+					| по всем нашим направлениям для новичков
+				a.invitation__button(href="/newbies") Подробнее
+
+	.description.view-port.main-padding
+		.description__item
+			img.description__item_img(src='images/descr_1.png', alt='')
+			.description__item_text Профессиональные преподаватели с большим стажем
+		.description__item
+			img.description__item_img(src='images/descr_2.png', alt='')
+			.description__item_text Несколько просторных залов
+		.description__item
+			img.description__item_img(src='images/descr_3.png', alt='')
+			.description__item_text Групповые и индивидуальные программы
+		.description__item
+			img.description__item_img(src='images/descr_4.png', alt='')
+			.description__item_text Авторские методики
+
+	.index__line
+
+	.special.view-port.main-padding
+		.main-title Специализированные направления
+		.special__descr В нашей студии мы предлагаем опыт и знания инструкторов, которые обучены работать с большим перечнем различных ситуаций, особенностей, травм и болезней.
+		.special__icons
+			.special__item
+				.special__item_img-wrapper
+					img.special__item_img(src='images/special_1.png', alt='')
+				.special__item_text Для мужчин
+			.special__item
+				.special__item_img-wrapper
+					img.special__item_img(src='images/special_2.png', alt='')
+				.special__item_text Для беременных
+			.special__item
+				.special__item_img-wrapper
+					img.special__item_img(src='images/special_3.png', alt='')
+				.special__item_text Коррекция фигуры
+			.special__item
+				.special__item_img-wrapper
+					img.special__item_img(src='images/special_4.png', alt='')
+				.special__item_text Спортсменам
+			.special__item
+				.special__item_img-wrapper
+					img.special__item_img(src='images/special_5.png', alt='')
+				.special__item_text Танцорам
+			.special__item
+				.special__item_img-wrapper
+					img.special__item_img(src='images/special_6.png', alt='')
+				.special__item_text При недержании
+		a.special__button(href='special_men.html') Специализированные направления
+
+	.index__line
+
+	.programs.main-padding
+		.programs__content.view-port
+			h2.main-title Наши программы
+			.programs__box
+				.programs__item
+					.programs__item_img-wrapper
+						img.programs__item_img(src='images/prog_1.jpg')
+					.programs__item_text-block
+						.programs__item_descr.programs__item_descr_double Для начинающих
+							br
+							| Для продвинутых
+						.main-title.bold Pilates Reformer
+						.programs__item_text Тренировки на знаменитом тренажере – Reformer. Чудо-кровать для укрепления мышечной и скелетной систем, безопасно и эффективно корректирует стереотипы движения, вызывающие боли в спине и суставах; подходит для всех, кто желает обрести красивую форму ног, рук, живота и восстановить все функции организма! Занятия благотворно влияют на нервную систему благодаря особому дыханию, которое мы используем во время упражнений. Это любовь с первого взгляда и движения!
+						.programs__item_button.form-button Записаться
+				.programs__item
+					.programs__item_img-wrapper
+						img.programs__item_img(src='images/prog_2.jpg')
+					.programs__item_text-block
+						.programs__item_descr Для любого уровня
+						.main-title.bold Pilates Mat
+						.programs__item_text Восстановление опорно-двигательного аппарата. Полезен при любых травмах суставов, позвоночных грыжах и для исправления отклонений в осанке. Метод тренировки; направленный на укрепление мышц живота, бедер, ягодиц, на улучшение осанки, гибкости, помогает снять напряжение с позвоночника.
+						.programs__item_button.form-button Записаться
+				.programs__item
+					.programs__item_img-wrapper
+						img.programs__item_img(src='images/prog_3.jpg')
+					.programs__item_text-block
+						.programs__item_descr Для продвинутых
+						.main-title.bold PROPS
+						.programs__item_text Класс для людей среднего уровня подготовки и продвинутых клиентов, чья цель плоский живот, упругие ягодицы, красивые руки и спина. В течение урока используется дополнительное оборудование: кольца, роллы. Ленточный амортизатор, мячи, ВOSU и PILATES ARC (корректор спины), которая разгружает спину, способствует ее гибкости и развивает мышцы, окружающие позвоночник.
+						.programs__item_button.form-button Записаться
+				.programs__item
+					.programs__item_img-wrapper
+						img.programs__item_img(src='images/prog_4.jpg')
+					.programs__item_text-block
+						.programs__item_descr Для продвинутых
+						.main-title.bold Pilates Tower
+						.programs__item_text Башня (Tower)  - это дополнительная арка с разными пружинами и петлями, которая крепится к Реформеру, что дает возможность расширить репертуар упражнений для реабилитации и обычных силовых тренировок. Уникальная возможность избавиться от болей в шейном и грудном отделах, так как здесь уделяется большое внимание организации головы, шеи и плеч. А также различные упражнения для расслабления поясничного отдела спины и укрепления мышц центра.
+						.programs__item_button.form-button Записаться
+			a.programs__button(href='programs.html') Все программы
+
+	.index__line
+
+	.trainers.view-port.main-padding
+		h2.main-title Тренеры
+		.trainers__content
+			.gallery__arrow.gallery__arrow--left.trainers__arrow.trainers__arrow--left#arrow-trainers-left(style='opacity: 0')
+				img.gallery__arrow_img(src='images/arrow_left.png', alt='')
+				img.gallery__arrow_img_active(src='images/arrow_left_active.png', alt='')
+			.trainers__slider
+				.trainers__item
+					.trainers__item_img-wrapper
+						img.trainers__item_img(src='images/trainers_index/elena.png')
+					.trainers__item_text-block
+						.trainers__item_name.main-title Елена Королева
+						.trainers__item_text
+							p.trainers-page__text_p Тренер по пилатесу, йоге, функциональному тренингу. Основатель студии.
+							p.trainers-page__text_p Почти все сказано о пилатесе... В интернете, в журналах ... Однако мы сталкиваемся с изумлением людей, когда они видят наше оборудование. Пилатес не имеет противопоказаний и имеет массу преимуществ.
+							p.trainers-page__text_p Когда мне говорят «Пилатес — это не моё», я понимаю одно — не было ещё рядом того, кто вскроет в теле новые возможности и резервы. Та осознанность, которая просыпается во время занятий, та чувствительность , которая пробуждается, те ощущения, которые возникают... ммм... Не знаю, как можно не влюбиться)
+							p.trainers-page__text_p Я влюбилась в 2003 году. Впервые испытав ограничения в теле, мышечные зажимы, хотя я была тренером по Йоге. И сильным тренером! Тело не хотело двигаться так, как предполагает метод пилатеса) не хотело... И я решила разобраться, в чем дело! До сих пор я исследую тело человека, его душу и влияние одного на другое. До сих пор несу в люди функциональное движение, которое позволяет наслаждаться жизнью.
+				.trainers__item
+					.trainers__item_img-wrapper
+						img.trainers__item_img(src='images/trainers_index/yuliana.png')
+					.trainers__item_text-block
+						.trainers__item_name.main-title Степанян Юлиана
+						.trainers__item_text
+							p.trainers-page__text_p С системой Джозефа Пилатеса я познакомилась, будучи студенткой юридического факультета. Неправильное распределение ресурсов и пренебрежение своим здоровьем привело меня в студию пилатеса к персональному тренеру, где после первого же занятия, мне стало ясно, почему в свои 22 года я чувствовала себя плохо. Именно тогда в моей голове промелькнула мысль, что я буду работать персональным тренером и помогать людям.
+							p.trainers-page__text_p Движение в удовольствие — один из главных критериев качественной жизни сегодня, когда большую часть времени мы проводим стоя, сидя или лёжа. Поэтому так важно разрешить своему телу двигаться. Руководствуясь принципами движения Polestar Pilates и потребностями клиента, мы проводим тренировку в безопасном и комфортном режиме, шаг за шагом, исследуя возможности и потенциал тела. Обучая новым двигательным навыкам и улучшая качество движения, мы предлагаем телу самому выбрать, каким именно способом ему лучше двигаться.
+							p.trainers-page__text_p Наше тело обладает невероятным потенциалом к исцелению, и мы должны использовать эту возможность. Буду рада видеть Вас в нашей студии и быть Вашим Проводником на этом пути!
+				.trainers__item
+					.trainers__item_img-wrapper
+						img.trainers__item_img(src='images/trainers_index/kristina.png')
+					.trainers__item_text-block
+						.trainers__item_name.main-title Ширкова Кристина
+						.trainers__item_text
+							p.trainers-page__text_p Движение — это жизнь, а жизнь — это и есть движение.
+							p.trainers-page__text_p Только через труд возможно получить желаемый результат. Нагружая себя физическими упражнениями и осознанно, правильно питаясь, Вы создаете свой собственный режим, который становится неотъемлемой частью вашей жизни.
+							p.trainers-page__text_p На моих тренировках Вы научитесь двигаться безопасно и с удовольствием, я сделаю Ваши занятия интересными, разнообразными и эффективными!
+			.gallery__arrow.gallery__arrow--right.trainers__arrow.trainers__arrow--right#arrow-trainers-right(style='opacity: 0')
+				img.gallery__arrow_img(src='images/arrow_right.png', alt='')
+				img.gallery__arrow_img_active(src='images/arrow_right_active.png', alt='')
+			a.trainers__button(href='trainers.html') Все тренеры
+
+	.index__line
+
+	.gallery.main-padding
+		h2.main-title Фотографии студии
+		.gallery__content.view-port
+			.gallery__arrow.gallery__arrow--left#arrow-gallery-left
+				img.gallery__arrow_img(src='images/arrow_left.png', alt='')
+				img.gallery__arrow_img_active(src='images/arrow_left_active.png', alt='')
+			.gallery__slider
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_1.jpg', alt='')
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_2.jpg', alt='')
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_3.jpg', alt='')
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_4.jpg', alt='')
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_5.jpg', alt='')
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_6.jpg', alt='')
+				.gallery__slider_img-wrapper
+					img.gallery__slider_img(src='images/gallery/gallery_7.jpg', alt='')
+			.gallery__arrow.gallery__arrow--right#arrow-gallery-right
+				img.gallery__arrow_img(src='images/arrow_right.png', alt='')
+				img.gallery__arrow_img_active(src='images/arrow_right_active.png', alt='')
+
+	.overlay.hidden
+	+form('top', 'form')
+
+	.thanks.modal.hidden
+		p.thanks__text Спасибо!
+		p.thanks__text Мы свяжемся с вами в ближайшее время и запишем на занятие
+		.modal__close
+			img.modal__close_img(src='images/close.png', alt='Закрыть')
+

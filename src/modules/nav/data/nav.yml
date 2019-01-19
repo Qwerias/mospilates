@@ -1,0 +1,26 @@
+---
+    nav:
+        -
+            title: 'Главная'
+            href: '/'
+        -
+            title: 'Расписание'
+            href: '../timetable/'
+        -
+            title: 'Программы'
+            href: '../programs/'
+        -
+            title: 'Цены'
+            href: '../prices/'
+        -
+            title: 'Тренеры'
+            href: '../trainers/'
+        -
+            title: 'Специализация'
+            href: '../special_men/'
+        -
+            title: 'Контакты'
+            href: '../contacts/'
+        -
+            title: 'Диагностическая тренировка'
+            href: '../rules/'

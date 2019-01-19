@@ -1,0 +1,447 @@
+@require 'partials/_params.styl'
+@require 'partials/_mixins.styl'
+
+.invitation
+	line-height 1.3
+	height calc(100vh - 174px) !important
+	&__slide
+		padding-top 80px
+		padding-bottom 80px
+		width 100%
+		height 100%
+		&--1
+			bg('../images/invitation.jpg')
+		&--2
+			bg('../images/invitation_2.jpg')
+		&--3
+			bg('../images/invitation_3.jpg')
+			background-position center bottom
+			//padding-top 120px
+			//padding-bottom 40px
+			position relative
+			& .invitation__content
+				position absolute
+				left 0
+				right 0
+				bottom 10%
+				margin auto
+				display flex
+				flex-direction: column
+				justify-content: flex-end
+			& .invitation__title
+				font-size 36px
+				color #d11818
+			& .invitation__list_item
+				color #d11818
+				font-size 18px
+			& .invitation__button
+				font-size 17px
+				align-self flex-end
+				color #d11818
+				border-color #d11818
+				margin-top -45px
+				&:hover
+					background-color #d11818
+					color #fff
+		&--4
+			bg('../images/invitation_4.jpg')
+	&__content
+		flex(column, flex-start, flex-start)
+	&__title
+		font-size 48px
+		color #fff
+		margin-bottom 20px
+	&__subtitle
+		color #04afda
+		font-size 18px
+		margin-bottom 70px
+		letter-spacing 0.8px
+		&--2
+			color #fff
+	&__button
+		flex()
+		color #fff
+		border 1px solid #fff
+		border-radius 5px
+		text-transform uppercase
+		padding 13px 25px 12px
+		cursor pointer
+		transition .3s all
+		font-size 18px
+		line-height: 1
+		letter-spacing 0.5px
+		&:hover
+			background-color #fff
+			color #000
+	&__right-container
+		width 436px
+		margin-left auto
+		height 100%
+		flex(column, $ai: flex-start)
+
+.description
+	flex($ai: flex-start)
+	&__item
+		width 24%
+		text-align center
+		&_img
+			padding-bottom 25px
+		&_text
+			line-height 1.3
+			font-size 18px
+			letter-spacing 0.5px
+			width 100%
+
+.index__line
+	width 100%
+	height 1px
+	background-color #000
+	opacity .3
+
+.gallery
+	flex(column)
+	text-align center
+	&__content
+		flex()
+		width 100%
+	&__slider
+		width 72%
+		&_img
+			width 100%
+	&__arrow
+		position relative
+		cursor pointer
+		&:hover
+			.gallery__arrow_img_active
+				opacity 1
+				z-index 1
+				width 100%
+			.gallery__arrow_img
+				opacity 0
+				z-index -10
+				width 100%
+		&_img
+			position absolute
+			left 0
+			top 0
+			transition .3s all
+			width 100%
+			&_active
+				opacity 0
+				z-index -10
+				transition .3s all
+				width 100%
+
+.programs
+	background-color 000
+	color #000
+	&__content
+		flex(column)
+	&__box
+		flex($ai: stretch)
+		flex-wrap wrap
+	&__item
+		width 48%
+		color #fff
+		background-color #04afda
+		line-height 1.3
+		margin-bottom 50px
+		border-radius 5px
+		flex(column, $ai: stretch)
+		&_text-block
+			padding 40px 25px 30px
+			flex(column, space-between, flex-start)
+			flex-grow 1
+		&_img-wrapper
+			width 100%
+		&_img
+			width 100%
+		&_descr
+			font-size 20px
+			margin-bottom 10px
+			letter-spacing 0.7px
+			&_double
+				margin-top -26px
+		&_title
+			font-size 36px
+			margin-bottom 30px
+			letter-spacing 1.1px
+		&_text
+			font-size 14px
+			padding 20px 0
+			border-top 1px solid #fff
+			letter-spacing 0.4px
+		&_button
+			@extend .invitation__button
+			color #04afda
+			background-color #fff
+			margin-top auto
+			border 1px solid #fff
+			&:hover
+				background-color  #04afda
+				color #fff
+				border: 1px solid #fff
+	&__button
+		@extend .invitation__button
+		background-color transparent
+		border 1px solid #fff
+		color #fff
+		&:hover
+			background-color #fff
+			color #04afda
+
+.trainers
+	position relative
+	&__content
+		flex(column, $ai: center)
+	&__arrow
+		position absolute
+		top 34%
+		left $padding-large
+		z-index 100
+		& img
+			display block
+		&--right
+			left auto
+			right $padding-large
+	&__slider
+		width 100%
+	&__item
+		flex(column)
+		width 100%
+		&_img
+			margin 0 auto
+			width 100%
+			max-width 586px
+			&-wrapper
+				max-width calc(100% - 110px * 2)
+				margin 0 auto
+		&_text-block
+			width 100%
+			text-align left
+			padding-top 30px
+			line-height 1.3
+		&_name
+			text-align left
+			color #04afda
+		&_text
+			letter-spacing 0.5px
+	&__button
+		@extend .invitation__button
+		color #04afda
+		border 1px solid #04afda
+		margin-top 50px
+		&:hover
+			background-color #04afda
+			color #fff
+
+.special
+	line-height 1.3
+	flex(column, $ai:center)
+	&__descr
+		text-align center
+		font-size 24px
+		max-width 750px
+		margin 0 auto
+		color #04afda
+		margin-bottom 60px
+	&__icons
+		width 100%
+		flex($ai: stretch)
+		margin-bottom 60px
+	&__item
+		flex(column, space-between)
+		color #04afda
+		font-size 18px
+		&_img-wrapper
+			margin-bottom 20px
+	&__button
+		@extend .invitation__button
+		color #04afda
+		border 1px solid #04afda
+		&:hover
+			background-color #04afda
+			color #fff
+
+@media screen and (max-width 1150px)
+	.invitation
+		&__slide
+			&--3
+				bg('../images/invitation_3_mob.jpg')
+
+@media screen and (max-width $view-port-large)
+	.invitation
+		&__title
+			font-size 40px
+		&__subtitle
+			font-size 16px
+			margin-bottom 50px
+	.description
+		flex-wrap wrap
+		&__item
+			width 48%
+			margin-bottom 30px
+	.gallery
+		&__arrow
+			width 95px
+	.special
+		&__descr
+			font-size 22px
+		&__icons
+			flex-wrap wrap
+		&__item
+			width 30%
+			margin-bottom 30px
+			&_img-wrapper
+				margin-bottom 10px
+
+@media screen and (max-width 870px)
+	.invitation
+		height calc(100vh - 145px) !important
+
+
+@media screen and (max-width $view-port-tablet)
+	.invitation
+		height 450px !important
+		background-position left
+		& .invitation__title
+			&:first-child
+				margin-top 0
+	.trainers
+		&__item
+			&_img-wrapper
+				max-width 586px
+	.gallery
+		&__arrow
+			width 80px
+	.special
+		&__descr
+			font-size 20px
+			margin-bottom 50px
+		&__icons
+			margin-bottom 50px
+
+
+@media screen and (max-width $view-port-medium)
+	.invitation
+		height 450px !important
+		&__title
+			font-size 34px
+		&__slide
+			&--3
+				padding-top 80px
+				padding-bottom 40px
+			&__content
+				position static
+			& .invitation__button
+				margin-top: 30px
+				align-self: center
+			& .invitation__title
+				font-size: 24px
+	.gallery
+		&__arrow
+			width 65px
+	.programs
+		&__item
+			width 90%
+			margin-left auto
+			margin-right auto
+		&__item
+			&_descr
+				font-size 16px
+			&_descr_double
+				margin-top 0
+			&_text-block
+				padding 20px
+	.special
+		&__descr
+			font-size 18px
+			margin-bottom 40px
+		&__item
+			width 50%
+		&__icons
+			margin-bottom 40px
+
+
+@media screen and (max-width $view-port-mob)
+	.invitation
+		height 400px !important
+		&__title
+			font-size 28px
+		&__subtitle
+			font-size 14px
+		&__button
+			font-size 14px
+		&__right-container
+			width 100%
+		&__slide--3
+			& .invitation__title
+				font-size: 21px
+			& .invitation__list_item
+				font-size 14px
+			& .invitation__button
+				font-size 14px
+	.description
+		&__item
+			width 100%
+			&_img
+				padding-bottom 15px
+	.gallery
+		&__arrow
+			width 50px
+	.programs
+		&__item
+			&_button
+				font-size 14px
+		&__button
+			font-size 14px
+	.trainers
+		&__item
+			&_text
+				font-size 14px
+		&__button
+			font-size 14px
+	.special
+		&__descr
+			font-size 16px
+			margin-bottom 30px
+		&__button
+			font-size 14px
+		&__icons
+			margin-bottom 30px
+
+@media screen and (max-width $view-port-sm)
+	.invitation
+		&__button
+			font-size 12px
+
+		&__slide--3
+			& .invitation__title
+				font-size: 18px
+			& .invitation__button
+				font-size 12px
+	.gallery
+		&__arrow
+			width 35px
+	.programs
+		&__item
+			&_button
+				font-size 12px
+			&_text-block
+				padding 20px 15px
+		&__button
+			font-size 12px
+	.trainers
+		&__button
+			font-size 12px
+	.special
+		&__item
+			width 100%
+		&__descr
+			margin-bottom 20px
+		&__button
+			font-size 12px
+			text-align center
+			line-height 1.3
+		&__icons
+			margin-bottom 20px

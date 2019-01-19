@@ -1,0 +1,25 @@
+include ../nav/nav
+
+mixin header()
+	header.header
+		.header__content.view-port
+			.header__top
+				a.header__logo(href='/')
+					img.header__logo_img(src='images/logo.svg', alt='Логотип')
+				.header__contacts
+					.header__contacts_container
+						a.header__contacts_link(href='http://maps.yandex.ru/?text=55.665264, 37.471866' target='_blank') Мы на карте
+						a.header__contacts_link(href="mailto:info@mospilates.ru") info@mospilates.ru
+					.header__time
+						.header__time_whatsapp whatsapp: +7 999 879-20-58
+						.header__time_text
+							.header__time_text_span пн-пт: 9:00-22:00
+							.header__time_text_span сб-вс: 10:00-20:00
+					.header__phone
+						a.header__phone_number(href='tel:+74954381001') +7 495 438-10-01
+						.header__phone_button.form-button Записаться
+			.header__menu
+				.header__menu_content
+					img.header__menu_img(src='images/menu.png', alt='Меню')
+				.header__menu_whatsapp whatsapp: +7 999 879-20-58
+				+nav(nav)

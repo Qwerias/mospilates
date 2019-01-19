@@ -1,0 +1,77 @@
+@require 'partials/_params.styl'
+@require 'partials/_mixins.styl'
+
+.prices
+	&__title
+		text-align center!important
+	&__link
+		link(#000)
+		text-decoration underline
+		font-weight bold
+		&:hover
+			text-decoration none
+	&__space
+		height 40px
+
+	&__table
+		flex($ai: stretch)
+		width 100%
+		letter-spacing 0.5px
+		line-height 1.3
+		border 1px solid #04afda
+		//border-right none
+		&_col
+			flex-basis 50%
+			flex(column, $ai: stretch)
+			&:last-child
+				& .prices__table_body
+					border-right none
+		&_cell
+			width 100%
+			flex-grow 1
+			padding 10px 20px
+			height 70px
+			flex(column, center, flex-start)
+			& p
+				margin-bottom 5px
+				&:last-child
+					margin-bottom 0
+		&_head
+			background-color #04afda
+			color #fff
+			flex-grow 1
+			&--empty
+				color #04afda
+		&_body
+			border-bottom 1px solid #04afda
+			border-top none
+			border-right 1px solid #04afda
+			color #000
+			position relative
+			&:last-child
+				border-bottom none
+				color #000
+
+		//&_head, &_body
+		//	flex($ai: stretch)
+		//	width 100%
+		//	letter-spacing 0.5px
+		//	line-height 1.3
+		//&_head_item, &_body_item
+		//	flex-grow 1
+		//	padding 20px 30px
+		//	flex-basis 50%
+		//	& p
+		//		margin-bottom 10px
+		//		&:last-child
+		//			margin-bottom 0
+		//&_head_item
+		//	background-color #532e93
+		//	color #fff
+		//&_body_item
+		//	color #000
+		//	border 1px solid #532e93
+		//	border-right none
+		//	border-top none
+		//	&:last-child
+		//		border-right 1px solid #532e93

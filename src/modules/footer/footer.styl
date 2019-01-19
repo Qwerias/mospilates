@@ -1,0 +1,75 @@
+@require '../../css/partials/_params.styl'
+@require '../../css/partials/_mixins.styl'
+
+.footer
+	background-color #04afda
+	&__content
+		flex()
+		padding-top: 40px
+		padding-bottom: 40px
+	&__rights
+		font-size 26px
+		color #fff
+	&__links
+		flex()
+		&_link
+			link(#fff)
+			font-size 28px
+			letter-spacing 0.5
+			&:first-child
+				margin-right 20px
+			&:hover
+				text-decoration underline
+	&__join-us
+		flex()
+		&_text
+			color #fff
+			font-size 20px
+			margin-right 20px
+
+@media screen and (max-width $view-port-tablet)
+	.footer
+		&__rights
+			font-size 22px
+		&__join-us
+			flex(column, $ai: center)
+			&_text
+				margin-right 0
+				margin-bottom 10px
+
+@media screen and (max-width $view-port-medium)
+	.footer
+		&__content
+			flex-direction column
+			padding-top 20px
+			padding-bottom 20px
+		&__rights
+			order 2
+		&__links
+			order 1
+			margin-bottom: 15px
+
+@media screen and (max-width $view-port-mob)
+	.footer
+		&__rights
+			font-size 18px
+		&__links
+			&_link
+				font-size 24px
+		&__join-us
+			&_text
+				font-size 16px
+
+@media screen and (max-width $view-port-sm)
+	.footer
+		&__content
+			flex-direction column
+			padding-top 20px
+			padding-bottom 20px
+		&__rights
+			order 2
+		&__links
+			order 1
+			margin-bottom: 15px
+			&_link
+				font-size 24px

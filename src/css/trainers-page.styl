@@ -1,0 +1,52 @@
+@require 'partials/_params.styl'
+@require 'partials/_mixins.styl'
+
+.trainers-page
+	padding-top 60px
+	&__title
+		text-align left
+	&__wrapper
+		flex($jc: space-between, $ai: flex-start)
+		margin-bottom 60px
+	&__img
+		width 48%
+	&__text
+		width 48%
+		&_title
+			text-align left
+			color #04afda
+		&_p
+			font-size 17px
+			letter-spacing 0.5px
+			line-height 1.3
+			margin-top 10px
+
+
+@media screen and (max-width $view-port-large)
+	.trainers-page
+		&__wrapper
+			flex-direction column
+			align-items center
+			margin-bottom 50px
+		&__text
+			max-width 672px
+			width 100%
+			&_inverse
+				order 2
+			&_title
+				margin-top 20px
+			&_p
+				font-size 16px
+		&__img
+			max-width 672px
+			width 100%
+
+@media screen and (max-width $view-port-tablet)
+	.trainers-page
+		&__wrapper
+			margin-bottom 40px
+
+@media screen and (max-width $view-port-medium)
+	.trainers-page
+		&__wrapper
+			margin-bottom 30px

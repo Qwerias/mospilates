@@ -1,0 +1,10 @@
+mixin form(value, id)
+	form.form.modal.hidden(method="POST" action="" id=id)
+		p.form__title.special-page__title.special-page__text_subtitle_rules Записаться на занятие
+		input.form__input(type='text' name='name' required placeholder='Ваше имя')
+		input.form__input(type='tel' name='phone' required placeholder='Ваш телефон')
+		.form__container
+			button.form__button(name='submit' value='submit' type='submit') Отправить
+			.form__text Отправляя данные формы, я тем самым соглашаюсь на обработку персональных данных
+		.modal__close
+			img.modal__close_img(src='images/close.png' alt='Закрыть')

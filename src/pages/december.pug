@@ -1,0 +1,9 @@
+extends ../layouts/default
+include ../modules/timetable-box/timetable-box
+include ../modules/icon/icon
+
+block content
+	.december
+		.view-port
+			h2.december__title Расписание 23 декабря
+			+timetable-box(timetable_box)

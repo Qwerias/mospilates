@@ -1,0 +1,93 @@
+@require 'partials/_params.styl'
+@require 'partials/_mixins.styl'
+
+*, *:before, *:after
+	box-sizing border-box !important
+
+body
+	font-family 'PT Sans', sans-serif !important
+
+.bold
+	font-weight 700
+
+.italic
+	font-style italic
+
+.view-port
+	max-width $view-port-xl
+	width 100%
+	padding-left $padding-large
+	padding-right $padding-large
+	margin-left auto
+	margin-right auto
+
+.main-padding
+	padding-top 60px
+	padding-bottom 60px
+
+.main-title
+	font-size 36px
+	margin-bottom 30px
+	letter-spacing 1.1px
+	text-align center
+
+.opened
+	display block !important
+
+.hidden
+	display none !important
+
+.overlay
+	position fixed
+	left 0
+	right 0
+	top 0
+	bottom 0
+	background-color #000
+	opacity .5
+	z-index 300
+	cursor pointer
+
+@media screen and (max-width $view-port-large)
+	.view-port
+		padding-left $padding-tablet
+		padding-right $padding-tablet
+	.main-padding
+		padding-top 50px
+		padding-bottom 50px
+	.main-title
+		font-size 32px
+
+@media screen and (max-width $view-port-tablet)
+	.view-port
+		padding-left $padding-medium
+		padding-right $padding-medium
+	.main-padding
+		padding-top 40px
+		padding-bottom 40px
+	.main-title
+		font-size 30px
+		margin-bottom 25px
+
+@media screen and (max-width $view-port-medium)
+	.view-port
+		padding-left $padding-mob
+		padding-right $padding-mob
+	.main-padding
+		padding-top 30px
+		padding-bottom 30px
+	.main-title
+		font-size 26px
+		margin-bottom 20px
+
+@media screen and (max-width $view-port-mob)
+	.view-port
+		padding-left $padding-sm
+		padding-right $padding-sm
+	.main-title
+		font-size 24px
+		margin-bottom 15px
+
+@media screen and (max-width $view-port-sm)
+	.main-title
+		font-size 20px

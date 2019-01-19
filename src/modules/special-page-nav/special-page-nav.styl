@@ -1,0 +1,38 @@
+@require '../../css/partials/_params.styl'
+@require '../../css/partials/_mixins.styl'
+
+.special-page__nav
+	margin-bottom 40px
+	&_list
+		flex($jc: flex-start)
+		flex-wrap wrap
+	&_item
+		margin 0 0 10px
+	&_link
+		link(#04afda)
+		font-size 18px
+		text-decoration underline
+		width 100%
+		padding 5px 40px 5px 0
+		flex($jc: center)
+		&:hover
+			text-decoration none
+		&--active
+			font-weight bold
+			text-decoration none
+			pointer-events none
+
+
+@media screen and (max-width $view-port-large)
+	.special-page__nav
+		&_item
+			//width 33%
+			flex($jc: center)
+			text-align center
+			margin-bottom 20px
+
+
+@media screen and (max-width $view-port-sm)
+	.special-page__nav
+		&_item
+			width 100%

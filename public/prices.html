@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="address=no" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet"><script src="libs/jquery.min.js" defer="defer"></script>
+        <link rel="stylesheet" href="libs/slick/slick.css" />
+        <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" /><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script><script src="libs/slick/slick.min.js" defer="defer"></script><script src="js/script.js" defer="defer"></script>
+        <title>Allegro</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content view-port">
+                <div class="header__top">
+                    <a class="header__logo" href="/">
+                        <img class="header__logo_img" src="images/logo.svg" alt="Логотип" />
+                    </a>
+                    <div class="header__contacts">
+                        <div class="header__contacts_container">
+                            <a class="header__contacts_link" href="http://maps.yandex.ru/?text=55.665264, 37.471866" target="_blank">Мы на карте</a>
+                            <a class="header__contacts_link" href="mailto:info@mospilates.ru">info@mospilates.ru</a>
+                        </div>
+                        <div class="header__time">
+                            <div class="header__time_whatsapp">whatsapp: +7 999 879-20-58</div>
+                            <div class="header__time_text">
+                                <div class="header__time_text_span">пн-пт: 9:00-22:00</div>
+                                <div class="header__time_text_span">сб-вс: 10:00-20:00</div>
+                            </div>
+                        </div>
+                        <div class="header__phone">
+                            <a class="header__phone_number" href="tel:+74954381001">+7 495 438-10-01</a>
+                            <div class="header__phone_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu_content">
+                        <img class="header__menu_img" src="images/menu.png" alt="Меню" />
+                    </div>
+                    <div class="header__menu_whatsapp">whatsapp: +7 999 879-20-58</div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="/">Главная
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../timetable/">Расписание
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../programs/">Программы
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../prices/">Цены
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../trainers/">Тренеры
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../special_men/">Специализация
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../contacts/">Контакты
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link nav__item_link_small" href="../rules/">Диагностическая тренировка
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="invitation">
+            <div class="invitation__slide">
+                <div class="invitation__content view-port">
+                    <h1 class="invitation__title">Скидка 30% на
+                        <br>первое посещение</h1>
+                    <div class="invitation__subtitle">Скидка предоставляется при предварительной
+                        <br>записи по телефону</div>
+                    <div class="invitation__button form-button">Записаться</div>
+                </div>
+            </div>
+            <div class="invitation__slide">
+                <div class="invitation__content view-port">
+                    <h1 class="invitation__title">Занимайтесь дешевле
+                        <br>на 15%</h1>
+                    <div class="invitation__subtitle">Скидка предоставляется при предварительной
+                        <br>записи по телефону</div>
+                    <div class="invitation__button form-button">Записаться</div>
+                </div>
+            </div>
+        </div>
+        <div class="prices view-port main-padding">
+            <h1 class="prices__title special-page__title main-title">Цены</h1>
+            <p class="special-page__text special-page__text_subtitle">Перед тем как начать заниматься, необходимо пройти
+                <a class="prices__link" href="rules.html">стартовую тренировку</a>
+                (продолжительность 1-1,5ч).</p>
+            <p class="special-page__text special-page__text_subtitle special-page__text_subtitle_rules">Стартовая тренировка это: визуальная диагностика осанки, тестирование биомеханики суставов, проблемы и их решение в течение тренировочного процесса, составление программы в соответствии с индивидуальными особенностями.</p>
+            <p class="special-page__text special-page__text_subtitle"
+                style="margin-bottom: 0">Стоимость стартовой тренировки составляет 3000 рублей.</p>
+            <div class="prices__space"></div>
+            <p class="special-page__text special-page__text_subtitle">Специальное предложение для новичка «Введение в Пилатес»</p>
+            <div class="prices__table prices__table--small">
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Пилатес мат</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3 персональные тренировки</p>
+                        <p>стоимость: 7500 ₽</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Пилатес мат + большое оборудование</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>5 персональных тренировок</p>
+                        <p>стоимость: 12500 / 15000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prices__space"></div>
+            <p class="special-page__text special-page__text_subtitle">Тренировки в мини-группе</p>
+            <div class="prices__table prices__table--big">
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head prices__table_head--empty">
+                        <p>Пилатес</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>разовое</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>5 занятий</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>10 занятий (5 недель)</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>20 занятий (3 месяца)</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Йога / Пилатес мат</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>1300</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>6000 / 1200</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>11500 / 1150</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>22000 / 1100</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Пилатес на большом оборудовании</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>1700</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>8000 / 1600</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>15500 / 1550</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>30000 / 1500</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Дуэт / Пилатес мат (за 1 человека)</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>1600</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>8000 / 1500</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>14500 / 1450</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>28000 / 1400</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Дуэт / Reformer (за 1 человека)</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>2200</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>10500 / 2100</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>20500 / 2050</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>40000 / 2000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prices__space"></div>
+            <p class="special-page__text special-page__text_subtitle">Персональный тренинг. 1 клиент : 1 тренер, продолжительность 55 мин</p>
+            <div class="prices__table prices__table--big">
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Категории тренеров</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>разовое</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>5 занятий</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>10 занятий (5 недель)</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>20 занятий (3 месяца)</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Категория 1</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>2900 / 14500</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>2800 / 28000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>2700 / 54000</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Категория 2</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3500</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3400 / 17000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3300 / 33000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3200 / 64000</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Категория 3</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>4000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3900 / 19500</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3800 / 38000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>3700 / 74000</p>
+                    </div>
+                </div>
+                <div class="prices__table_col">
+                    <div class="prices__table_cell prices__table_head">
+                        <p>Категория 4</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>5500</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>5300 / 26500</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>5000 / 50000</p>
+                    </div>
+                    <div class="prices__table_cell prices__table_body">
+                        <p>4900 / 98000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-sertificate-button">Подарочный сертификат</div>
+        </div>
+        <div class="overlay hidden"></div>
+        <form class="form modal form-sertificate hidden">
+            <div class="form-sertificate__title">Подарочный сертификат</div>
+            <div class="form-sertificate__list">
+                <div class="form-sertificate__item">
+                    <span class="form-sertificate__text">Кому:</span>
+                    <input class="form-sertificate__input" type="text" name="for">
+                </div>
+                <div class="form-sertificate__item">
+                    <span class="form-sertificate__text">От кого:</span>
+                    <input class="form-sertificate__input" type="text" name="from">
+                </div>
+                <div class="form-sertificate__item">
+                    <span class="form-sertificate__text">Сумма:</span>
+                    <input class="form-sertificate__input" type="text" name="sum">
+                </div>
+                <div class="form-sertificate__item">
+                    <span class="form-sertificate__text">Срок действия:</span>
+                    <input class="form-sertificate__input" type="text" name="duration">
+                </div>
+            </div>
+            <button class="form-sertificate__button" name="submit_sertificate" type="submit">Заказать сертификат</button>
+            <div class="modal__close">
+                <img class="modal__close_img" src="images/close_white.png" alt="Закрыть">
+            </div>
+            <!--.prices__space-->
+            <!--p.special-page__text.special-page__text_subtitle Тренировки в мини-группе-->
+            <!--.prices__table-->
+            <!--	.prices__table_head-->
+            <!--		.prices__table_head_item-->
+            <!--			p-->
+            <!--		.prices__table_head_item-->
+            <!--			p Йога / Пилатес мат-->
+            <!--		.prices__table_head_item-->
+            <!--			p Пилатес на большом оборудовании-->
+            <!--		.prices__table_head_item-->
+            <!--			p Дуэт / Пилатес мат (за 1 человека)-->
+            <!--		.prices__table_head_item-->
+            <!--			p Дуэт / Reformer (за 1 человека)-->
+            <!--	.prices__table_body-->
+            <!--		.prices__table_body_item-->
+            <!--			p разовое-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1300-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1700-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1600-->
+            <!--		.prices__table_body_item-->
+            <!--			p 2200-->
+            <!--	.prices__table_body-->
+            <!--		.prices__table_body_item-->
+            <!--			p разовое-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1300-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1700-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1600-->
+            <!--		.prices__table_body_item-->
+            <!--			p 2200-->
+            <!--	.prices__table_body-->
+            <!--		.prices__table_body_item-->
+            <!--			p разовое-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1300-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1700-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1600-->
+            <!--		.prices__table_body_item-->
+            <!--			p 2200-->
+            <!--	.prices__table_body-->
+            <!--		.prices__table_body_item-->
+            <!--			p разовое-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1300-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1700-->
+            <!--		.prices__table_body_item-->
+            <!--			p 1600-->
+            <!--		.prices__table_body_item-->
+            <!--			p 2200-->
+        </form>
+        <footer class="footer">
+            <div class="footer__content view-port">
+                <div class="footer__rights">© Студия Пилатеса Аллегро 2018</div>
+                <div class="footer__join-us">
+                    <div class="footer__join-us_text">Присоединяйтесь к нам:</div>
+                    <div class="footer__links">
+                        <a class="footer__links_link" href="https://instagram.com/pilatesstudio_allegro" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="footer__links_link" href="https://www.facebook.com/mospilates/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

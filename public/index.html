@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="address=no" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet"><script src="libs/jquery.min.js" defer="defer"></script>
+        <link rel="stylesheet" href="libs/slick/slick.css" />
+        <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" /><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script><script src="libs/slick/slick.min.js" defer="defer"></script><script src="js/script.js" defer="defer"></script>
+        <title>Allegro</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content view-port">
+                <div class="header__top">
+                    <a class="header__logo" href="/">
+                        <img class="header__logo_img" src="images/logo.svg" alt="Логотип" />
+                    </a>
+                    <div class="header__contacts">
+                        <div class="header__contacts_container">
+                            <a class="header__contacts_link" href="http://maps.yandex.ru/?text=55.665264, 37.471866" target="_blank">Мы на карте</a>
+                            <a class="header__contacts_link" href="mailto:info@mospilates.ru">info@mospilates.ru</a>
+                        </div>
+                        <div class="header__time">
+                            <div class="header__time_whatsapp">whatsapp: +7 999 879-20-58</div>
+                            <div class="header__time_text">
+                                <div class="header__time_text_span">пн-пт: 9:00-22:00</div>
+                                <div class="header__time_text_span">сб-вс: 10:00-20:00</div>
+                            </div>
+                        </div>
+                        <div class="header__phone">
+                            <a class="header__phone_number" href="tel:+74954381001">+7 495 438-10-01</a>
+                            <div class="header__phone_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu_content">
+                        <img class="header__menu_img" src="images/menu.png" alt="Меню" />
+                    </div>
+                    <div class="header__menu_whatsapp">whatsapp: +7 999 879-20-58</div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="/">Главная
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../timetable/">Расписание
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../programs/">Программы
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../prices/">Цены
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../trainers/">Тренеры
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../special_men/">Специализация
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../contacts/">Контакты
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link nav__item_link_small" href="../rules/">Диагностическая тренировка
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="invitation">
+            <div class="invitation__slide invitation__slide--1">
+                <div class="invitation__content view-port">
+                    <h1 class="invitation__title">Скидка 30% на
+                        <br>первое посещение</h1>
+                    <div class="invitation__subtitle">Скидка предоставляется при предварительной
+                        <br>записи по телефону</div>
+                    <div class="invitation__button form-button">Записаться</div>
+                </div>
+            </div>
+            <div class="invitation__slide invitation__slide--2">
+                <div class="invitation__content view-port">
+                    <div class="invitation__right-container">
+                        <h1 class="invitation__title">Занимайтесь дешевле на 15%</h1>
+                        <div class="invitation__subtitle invitation__subtitle--2">Скидка предоставляется при предварительной записи по телефону</div>
+                        <div class="invitation__button form-button">Записаться</div>
+                    </div>
+                </div>
+            </div>
+            <div class="invitation__slide invitation__slide--3">
+                <div class="invitation__content view-port">
+                    <div class="invitation__title">Новогодний праздник для тела!</div>
+                    <div class="invitation__title bold">23 декабря</div>
+                    <div class="invitation__title">Бесплатные тренировки и фуршет</div>
+                    <div class="invitation__list">
+                        <div class="invitation__list_item">- пилатес</div>
+                        <div class="invitation__list_item">- йога</div>
+                        <div class="invitation__list_item">- миофасциальное расслабление</div>
+                        <div class="invitation__list_item">- диагностика опорно-двигательного аппарата</div>
+                    </div>
+                    <a class="invitation__button" href="/december">Программа и запись</a>
+                </div>
+            </div>
+            <div class="invitation__slide invitation__slide--4">
+                <div class="invitation__content view-port">
+                    <div class="invitation__title">Внимание, друзья!</div>
+                    <div class="invitation__subtitle invitation__subtitle--2">Каждый понедельник в 9:00/10:00 и в 19:00 мы проводим уроки
+                        <br>по всем нашим направлениям для новичков</div>
+                    <a class="invitation__button" href="/newbies">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="description view-port main-padding">
+            <div class="description__item">
+                <img class="description__item_img" src="images/descr_1.png" alt="">
+                <div class="description__item_text">Профессиональные преподаватели с большим стажем</div>
+            </div>
+            <div class="description__item">
+                <img class="description__item_img" src="images/descr_2.png" alt="">
+                <div class="description__item_text">Несколько просторных залов</div>
+            </div>
+            <div class="description__item">
+                <img class="description__item_img" src="images/descr_3.png" alt="">
+                <div class="description__item_text">Групповые и индивидуальные программы</div>
+            </div>
+            <div class="description__item">
+                <img class="description__item_img" src="images/descr_4.png" alt="">
+                <div class="description__item_text">Авторские методики</div>
+            </div>
+        </div>
+        <div class="index__line"></div>
+        <div class="special view-port main-padding">
+            <div class="main-title">Специализированные направления</div>
+            <div class="special__descr">В нашей студии мы предлагаем опыт и знания инструкторов, которые обучены работать с большим перечнем различных ситуаций, особенностей, травм и болезней.</div>
+            <div class="special__icons">
+                <div class="special__item">
+                    <div class="special__item_img-wrapper">
+                        <img class="special__item_img" src="images/special_1.png" alt="">
+                    </div>
+                    <div class="special__item_text">Для мужчин</div>
+                </div>
+                <div class="special__item">
+                    <div class="special__item_img-wrapper">
+                        <img class="special__item_img" src="images/special_2.png" alt="">
+                    </div>
+                    <div class="special__item_text">Для беременных</div>
+                </div>
+                <div class="special__item">
+                    <div class="special__item_img-wrapper">
+                        <img class="special__item_img" src="images/special_3.png" alt="">
+                    </div>
+                    <div class="special__item_text">Коррекция фигуры</div>
+                </div>
+                <div class="special__item">
+                    <div class="special__item_img-wrapper">
+                        <img class="special__item_img" src="images/special_4.png" alt="">
+                    </div>
+                    <div class="special__item_text">Спортсменам</div>
+                </div>
+                <div class="special__item">
+                    <div class="special__item_img-wrapper">
+                        <img class="special__item_img" src="images/special_5.png" alt="">
+                    </div>
+                    <div class="special__item_text">Танцорам</div>
+                </div>
+                <div class="special__item">
+                    <div class="special__item_img-wrapper">
+                        <img class="special__item_img" src="images/special_6.png" alt="">
+                    </div>
+                    <div class="special__item_text">При недержании</div>
+                </div>
+            </div>
+            <a class="special__button" href="special_men.html">Специализированные направления</a>
+        </div>
+        <div class="index__line"></div>
+        <div class="programs main-padding">
+            <div class="programs__content view-port">
+                <h2 class="main-title">Наши программы</h2>
+                <div class="programs__box">
+                    <div class="programs__item">
+                        <div class="programs__item_img-wrapper">
+                            <img class="programs__item_img" src="images/prog_1.jpg">
+                        </div>
+                        <div class="programs__item_text-block">
+                            <div class="programs__item_descr programs__item_descr_double">Для начинающих
+                                <br>Для продвинутых</div>
+                            <div class="main-title bold">Pilates Reformer</div>
+                            <div class="programs__item_text">Тренировки на знаменитом тренажере – Reformer. Чудо-кровать для укрепления мышечной и скелетной систем, безопасно и эффективно корректирует стереотипы движения, вызывающие боли в спине и суставах; подходит для всех, кто желает
+                                обрести красивую форму ног, рук, живота и восстановить все функции организма! Занятия благотворно влияют на нервную систему благодаря особому дыханию, которое мы используем во время упражнений. Это любовь с первого взгляда
+                                и движения!</div>
+                            <div class="programs__item_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                    <div class="programs__item">
+                        <div class="programs__item_img-wrapper">
+                            <img class="programs__item_img" src="images/prog_2.jpg">
+                        </div>
+                        <div class="programs__item_text-block">
+                            <div class="programs__item_descr">Для любого уровня</div>
+                            <div class="main-title bold">Pilates Mat</div>
+                            <div class="programs__item_text">Восстановление опорно-двигательного аппарата. Полезен при любых травмах суставов, позвоночных грыжах и для исправления отклонений в осанке. Метод тренировки; направленный на укрепление мышц живота, бедер, ягодиц, на улучшение
+                                осанки, гибкости, помогает снять напряжение с позвоночника.</div>
+                            <div class="programs__item_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                    <div class="programs__item">
+                        <div class="programs__item_img-wrapper">
+                            <img class="programs__item_img" src="images/prog_3.jpg">
+                        </div>
+                        <div class="programs__item_text-block">
+                            <div class="programs__item_descr">Для продвинутых</div>
+                            <div class="main-title bold">PROPS</div>
+                            <div class="programs__item_text">Класс для людей среднего уровня подготовки и продвинутых клиентов, чья цель плоский живот, упругие ягодицы, красивые руки и спина. В течение урока используется дополнительное оборудование: кольца, роллы. Ленточный амортизатор,
+                                мячи, ВOSU и PILATES ARC (корректор спины), которая разгружает спину, способствует ее гибкости и развивает мышцы, окружающие позвоночник.</div>
+                            <div class="programs__item_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                    <div class="programs__item">
+                        <div class="programs__item_img-wrapper">
+                            <img class="programs__item_img" src="images/prog_4.jpg">
+                        </div>
+                        <div class="programs__item_text-block">
+                            <div class="programs__item_descr">Для продвинутых</div>
+                            <div class="main-title bold">Pilates Tower</div>
+                            <div class="programs__item_text">Башня (Tower) - это дополнительная арка с разными пружинами и петлями, которая крепится к Реформеру, что дает возможность расширить репертуар упражнений для реабилитации и обычных силовых тренировок. Уникальная возможность
+                                избавиться от болей в шейном и грудном отделах, так как здесь уделяется большое внимание организации головы, шеи и плеч. А также различные упражнения для расслабления поясничного отдела спины и укрепления мышц центра.</div>
+                            <div
+                                class="programs__item_button form-button">Записаться</div>
+                    </div>
+                </div>
+            </div>
+            <a class="programs__button" href="programs.html">Все программы</a>
+        </div>
+        </div>
+        <div class="index__line"></div>
+        <div class="trainers view-port main-padding">
+            <h2 class="main-title">Тренеры</h2>
+            <div class="trainers__content">
+                <div class="gallery__arrow gallery__arrow--left trainers__arrow trainers__arrow--left" id="arrow-trainers-left" style="opacity: 0">
+                    <img class="gallery__arrow_img" src="images/arrow_left.png" alt="">
+                    <img class="gallery__arrow_img_active" src="images/arrow_left_active.png" alt="">
+                </div>
+                <div class="trainers__slider">
+                    <div class="trainers__item">
+                        <div class="trainers__item_img-wrapper">
+                            <img class="trainers__item_img" src="images/trainers_index/elena.png">
+                        </div>
+                        <div class="trainers__item_text-block">
+                            <div class="trainers__item_name main-title">Елена Королева</div>
+                            <div class="trainers__item_text">
+                                <p class="trainers-page__text_p">Тренер по пилатесу, йоге, функциональному тренингу. Основатель студии.</p>
+                                <p class="trainers-page__text_p">Почти все сказано о пилатесе... В интернете, в журналах ... Однако мы сталкиваемся с изумлением людей, когда они видят наше оборудование. Пилатес не имеет противопоказаний и имеет массу преимуществ.</p>
+                                <p class="trainers-page__text_p">Когда мне говорят «Пилатес — это не моё», я понимаю одно — не было ещё рядом того, кто вскроет в теле новые возможности и резервы. Та осознанность, которая просыпается во время занятий, та чувствительность , которая пробуждается,
+                                    те ощущения, которые возникают... ммм... Не знаю, как можно не влюбиться)</p>
+                                <p class="trainers-page__text_p">Я влюбилась в 2003 году. Впервые испытав ограничения в теле, мышечные зажимы, хотя я была тренером по Йоге. И сильным тренером! Тело не хотело двигаться так, как предполагает метод пилатеса) не хотело... И я решила разобраться,
+                                    в чем дело! До сих пор я исследую тело человека, его душу и влияние одного на другое. До сих пор несу в люди функциональное движение, которое позволяет наслаждаться жизнью.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainers__item">
+                        <div class="trainers__item_img-wrapper">
+                            <img class="trainers__item_img" src="images/trainers_index/yuliana.png">
+                        </div>
+                        <div class="trainers__item_text-block">
+                            <div class="trainers__item_name main-title">Степанян Юлиана</div>
+                            <div class="trainers__item_text">
+                                <p class="trainers-page__text_p">С системой Джозефа Пилатеса я познакомилась, будучи студенткой юридического факультета. Неправильное распределение ресурсов и пренебрежение своим здоровьем привело меня в студию пилатеса к персональному тренеру, где после
+                                    первого же занятия, мне стало ясно, почему в свои 22 года я чувствовала себя плохо. Именно тогда в моей голове промелькнула мысль, что я буду работать персональным тренером и помогать людям.</p>
+                                <p class="trainers-page__text_p">Движение в удовольствие — один из главных критериев качественной жизни сегодня, когда большую часть времени мы проводим стоя, сидя или лёжа. Поэтому так важно разрешить своему телу двигаться. Руководствуясь принципами движения
+                                    Polestar Pilates и потребностями клиента, мы проводим тренировку в безопасном и комфортном режиме, шаг за шагом, исследуя возможности и потенциал тела. Обучая новым двигательным навыкам и улучшая качество движения,
+                                    мы предлагаем телу самому выбрать, каким именно способом ему лучше двигаться.</p>
+                                <p class="trainers-page__text_p">Наше тело обладает невероятным потенциалом к исцелению, и мы должны использовать эту возможность. Буду рада видеть Вас в нашей студии и быть Вашим Проводником на этом пути!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainers__item">
+                        <div class="trainers__item_img-wrapper">
+                            <img class="trainers__item_img" src="images/trainers_index/kristina.png">
+                        </div>
+                        <div class="trainers__item_text-block">
+                            <div class="trainers__item_name main-title">Ширкова Кристина</div>
+                            <div class="trainers__item_text">
+                                <p class="trainers-page__text_p">Движение — это жизнь, а жизнь — это и есть движение.</p>
+                                <p class="trainers-page__text_p">Только через труд возможно получить желаемый результат. Нагружая себя физическими упражнениями и осознанно, правильно питаясь, Вы создаете свой собственный режим, который становится неотъемлемой частью вашей жизни.</p>
+                                <p
+                                    class="trainers-page__text_p">На моих тренировках Вы научитесь двигаться безопасно и с удовольствием, я сделаю Ваши занятия интересными, разнообразными и эффективными!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__arrow gallery__arrow--right trainers__arrow trainers__arrow--right" id="arrow-trainers-right" style="opacity: 0">
+                    <img class="gallery__arrow_img" src="images/arrow_right.png" alt="">
+                    <img class="gallery__arrow_img_active" src="images/arrow_right_active.png" alt="">
+                </div>
+                <a class="trainers__button" href="trainers.html">Все тренеры</a>
+            </div>
+        </div>
+        <div class="index__line"></div>
+        <div class="gallery main-padding">
+            <h2 class="main-title">Фотографии студии</h2>
+            <div class="gallery__content view-port">
+                <div class="gallery__arrow gallery__arrow--left" id="arrow-gallery-left">
+                    <img class="gallery__arrow_img" src="images/arrow_left.png" alt="">
+                    <img class="gallery__arrow_img_active" src="images/arrow_left_active.png" alt="">
+                </div>
+                <div class="gallery__slider">
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_1.jpg" alt="">
+                    </div>
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_2.jpg" alt="">
+                    </div>
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_3.jpg" alt="">
+                    </div>
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_4.jpg" alt="">
+                    </div>
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_5.jpg" alt="">
+                    </div>
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_6.jpg" alt="">
+                    </div>
+                    <div class="gallery__slider_img-wrapper">
+                        <img class="gallery__slider_img" src="images/gallery/gallery_7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="gallery__arrow gallery__arrow--right" id="arrow-gallery-right">
+                    <img class="gallery__arrow_img" src="images/arrow_right.png" alt="">
+                    <img class="gallery__arrow_img_active" src="images/arrow_right_active.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <form class="form modal hidden" method="POST" action="" id="form">
+            <p class="form__title special-page__title special-page__text_subtitle_rules">Записаться на занятие</p>
+            <input class="form__input" type="text" name="name" required="required" placeholder="Ваше имя" />
+            <input class="form__input" type="tel" name="phone" required="required" placeholder="Ваш телефон" />
+            <div class="form__container">
+                <button class="form__button" name="submit" value="submit" type="submit">Отправить</button>
+                <div class="form__text">Отправляя данные формы, я тем самым соглашаюсь на обработку персональных данных</div>
+            </div>
+            <div class="modal__close">
+                <img class="modal__close_img" src="images/close.png" alt="Закрыть" />
+            </div>
+        </form>
+        <div class="thanks modal hidden">
+            <p class="thanks__text">Спасибо!</p>
+            <p class="thanks__text">Мы свяжемся с вами в ближайшее время и запишем на занятие</p>
+            <div class="modal__close">
+                <img class="modal__close_img" src="images/close.png" alt="Закрыть">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__content view-port">
+                <div class="footer__rights">© Студия Пилатеса Аллегро 2018</div>
+                <div class="footer__join-us">
+                    <div class="footer__join-us_text">Присоединяйтесь к нам:</div>
+                    <div class="footer__links">
+                        <a class="footer__links_link" href="https://instagram.com/pilatesstudio_allegro" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="footer__links_link" href="https://www.facebook.com/mospilates/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+@require '_params.styl'
+
+flex($fd = row, $jc = space-between, $ai = center)
+	display flex
+	flex-direction $fd
+	align-items $ai
+	justify-content $jc
+
+bg($url, $repeat = no-repeat)
+	background-image url($url)
+	background-repeat $repeat
+	background-size cover
+	background-position center
+
+link($color)
+	color $color
+	text-transform none
+	&:link, &:visited, &:active
+		color $color

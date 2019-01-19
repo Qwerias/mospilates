@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="address=no" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet"><script src="libs/jquery.min.js" defer="defer"></script>
+        <link rel="stylesheet" href="libs/slick/slick.css" />
+        <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" /><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script><script src="libs/slick/slick.min.js" defer="defer"></script><script src="js/script.js" defer="defer"></script>
+        <title>Allegro</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content view-port">
+                <div class="header__top">
+                    <a class="header__logo" href="/">
+                        <img class="header__logo_img" src="images/logo.svg" alt="Логотип" />
+                    </a>
+                    <div class="header__contacts">
+                        <div class="header__contacts_container">
+                            <a class="header__contacts_link" href="http://maps.yandex.ru/?text=55.665264, 37.471866" target="_blank">Мы на карте</a>
+                            <a class="header__contacts_link" href="mailto:info@mospilates.ru">info@mospilates.ru</a>
+                        </div>
+                        <div class="header__time">
+                            <div class="header__time_whatsapp">whatsapp: +7 999 879-20-58</div>
+                            <div class="header__time_text">
+                                <div class="header__time_text_span">пн-пт: 9:00-22:00</div>
+                                <div class="header__time_text_span">сб-вс: 10:00-20:00</div>
+                            </div>
+                        </div>
+                        <div class="header__phone">
+                            <a class="header__phone_number" href="tel:+74954381001">+7 495 438-10-01</a>
+                            <div class="header__phone_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu_content">
+                        <img class="header__menu_img" src="images/menu.png" alt="Меню" />
+                    </div>
+                    <div class="header__menu_whatsapp">whatsapp: +7 999 879-20-58</div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="/">Главная
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../timetable/">Расписание
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../programs/">Программы
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../prices/">Цены
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../trainers/">Тренеры
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../special_men/">Специализация
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../contacts/">Контакты
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link nav__item_link_small" href="../rules/">Диагностическая тренировка
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="special-page view-port main-padding">
+            <div class="special-page__title main-title">Специальные программы</div>
+            <div class="special-page__nav">
+                <ul class="special-page__nav_list">
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_men/">Для мужчин</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_men/">Для мужчин</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_men/">Для мужчин</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_men/">Для мужчин</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <span class="special-page__nav_link special-page__nav_link--active">Для беременных</span>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_correction/">Коррекция фигуры</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_sport/">Спортсменам</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_dancers/">Танцорам</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_ups/">При недержании</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="special-page__container">
+                <div class="special-page__top-text">
+                    <h1 class="special-page__h1 main-title">Пилатес для беременных</h1>
+                    <p class="special-page__text bold">Занятия с беременными женщинами в Студии индивидуальные!</p>
+                    <p class="special-page__text">Занятия во время беременности являются важной частью сохранения здорового образа жизни. Тем не менее, физические изменения, которые сопровождают беременность, требуют изменения тренировочных программ во время беременности и сразу после
+                        родов.</p>
+                    <p class="special-page__text">Регулярные тренировки по системе Пилатеса способствуют:</p>
+                    <p class="special-page__text">— укреплению мышц спины
+                        <br>— улучшению кровообращения
+                        <br>— укреплению мышц живота и тазового дна
+                        <br>— увеличению подвижности позвоночника
+                        <br>—" раскрытию" тазобедренных суставов
+                        <br>— уменьшению застойных явлений в нижних конечностях
+                        <br>— обучению навыкам грудного бокового дыхания
+                        <br>— релаксации (расслаблению)</p>
+                </div>
+                <div class="special-page__img-wrapper">
+                    <img class="special-page__img" src="images/special/special_pregnant.jpg" alt="">
+                </div>
+            </div>
+            <p class="special-page__text">Доказан тот факт, что, занимаясь по методу Пилатеса, женщина в последствии легче переносит роды и, что самое важное, вынашивает благополучно ребенка весь срок без риска выкидыша. Правильная техника дыхания и общий контроль над своим телом,
+                управление мышцами тазового дна, умение расслабляться очень пригодятся во время родов.</p>
+            <p class="special-page__text">Занятия с беременными женщинами в Студии индивидуальные. Даже разбивка по группам в зависимости от триместра не используется. Мы учитываем не только срок беременности, но и то, занималась ли женщина до беременности, каков уровень физической
+                подготовки, и то, как она переносит занятия. Только в этом случае можно добиться максимальной эффективности и безопасности тренировок.</p>
+            <p class="special-page__text">Заниматься надо регулярно - 2-3 раза в неделю. Можно чаще - в том случае, если вы хорошо переносите занятия и до беременности вели спортивный образ жизни. Тренировки менее 1 раза в неделю, "от случая к случаю" - это каждый раз стресс для организма.
+                Не стоит пытаться освоить методику пилатеса самостоятельно, используя книги и видеоматериалы. Особенно опасны такие эксперименты во время беременности. Здесь очень важна техника выполнения упражнения. Овладеть ею вам поможет опытный инструктор.</p>
+            <p
+                class="special-page__text">Над чем будем работать?</p>
+                <p class="special-page__text">Дыхание в пилатесе увеличивает подвижность грудной клетки и позволяет наполнять легкие. Особенно такое дыхание необходимо будущим мамам в 3 триместре, когда диапазон движения диафрагмы ограничен положением ребенка. Занятия направлены на
+                    укрепление поперечной мышцы живота (самой глубокий слой мышц живота) - она корсетом окружает туловище и является самой ближайшей к внутренним органам. Укрепление этой области помогает поддерживать пояснично-крестцовый отдел позвоночника
+                    и таз в период, когда ослабляются связки вокруг суставов. Это ослабление может привести к отсутствию стабильности таза, что будет причиной возникновения проблем в пояснице, крестцово-повздошном сочленении и бедрах. Поперечная мышца
+                    живота поможет в процессе родов "подталкивать" ребенка. Занятия очень хорошо тренируют мышцы таза и тазового дна, делают их более выносливыми. А также увеличивается подвижность тазобедренных суставов. Поэтому при продолжительных родах
+                    благодаря натренированности мышц женщина легко сумеет принять наиболее удобное положение. Как видим, система Пилатеса отлично подходит для будущих мам и эффективна на всех этапах беременности: от планирования до счастливого финала,
+                    а также и в послеродовой период.</p>
+                <p class="special-page__text">Меры безопасности:</p>
+                <p class="special-page__text">Несмотря на то, что пилатес - метод щадящий, перед началом занятий необходимо проконсультироваться с акушером-гинекологом. Воздержитесь от занятий при следующих заболеваниях и состояниях:
+                    <br>— при острых заболеваниях и обострении хронических заболеваний, например при гриппе, ОРВИ, обострении гастрита
+                    <br>— при повышенном тонусе матки, кровянистых выделениях из половых путей, угрозе прерывания беременности
+                    <br>— при ярко выраженном токсикозе(продолжительная рвота)
+                    <br>— при гестозе беременности, проявляющемся повышением артериального давления, появлением белка в моче, отеков
+                    <br>— при наличии выкидышей в прошлом
+                    <br>— при многоводии
+                    <br>— при систематически появляющихся схваткообразных болях после занятий</p>
+                <p class="special-page__text">Во время 5 месяца матка становится достаточно большой и начинает давить на артерии, которые проходят по внутренней стороне позвоночника, когда Вы лежите на спине. Поэтому работа на спине сокращается или ограничивается.</p>
+                <p class="special-page__text">Мы готовы предложить Вам безопасные и спокойные занятия по методу Пилатеса с учетом всех особенностей каждого месяца беременности. Укрепление и стабилизация улучшит Ваши двигательные способности и снимет боли в течение всего срока беременности,
+                    подготовит и поможет во время родов.</p>
+                <p class="special-page__text">Продолжительность занятия 55 минут. (Иногда 20-30 минут бывает достаточно).</p>
+                <p class="special-page__text">После рождения ребенка, когда мама чувствует себя хорошо, то она может начать делать простые упражнения на активацию мышц Центра, тазового дна и для стабилизации таза.</p>
+                <p class="special-page__text">Если роды были вагинальными, то женщина может вернуться к начальному уровню упражнений, как только кровотечение остановилось и она чувствует себя хорошо. Если женщине делали эпизиотомию, то надо минимизировать отведение бедер и любые не
+                    комфортные движения в течение 6-8 недель после родов. Если роды происходили при помощи Кесарева сечения, напрягать живот не рекомендуется в течение 6-8 недель. Не стоит напрягать область со швами до их полного восстановления. Как только
+                    врач одобрит тренировки, целесообразно начать медленно, пока женщина не почувствует, что восстановила энергию полностью.</p>
+                <p class="special-page__text bold">Если Вы решили заниматься по методу Пилатеса во время беременности, мы настоятельно рекомендуем проконсультироваться с Вашим лечащим врачом.</p>
+                <div class="programs__item_button special-page__button form-button" onclick="yaCounter50557537.reachGoal('SKIDKA30'); return true;">Записаться</div>
+        </div>
+        <footer class="footer">
+            <div class="footer__content view-port">
+                <div class="footer__rights">© Студия Пилатеса Аллегро 2018</div>
+                <div class="footer__join-us">
+                    <div class="footer__join-us_text">Присоединяйтесь к нам:</div>
+                    <div class="footer__links">
+                        <a class="footer__links_link" href="https://instagram.com/pilatesstudio_allegro" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="footer__links_link" href="https://www.facebook.com/mospilates/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

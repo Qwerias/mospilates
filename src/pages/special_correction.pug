@@ -1,0 +1,19 @@
+extends ../layouts/default
+
+include ../modules/special-page-nav/special-page-nav
+
+block content
+	.special-page.view-port.main-padding
+		.special-page__title.main-title Специальные программы
+		+special-page-nav(special_page_nav, 'Коррекция фигуры')
+		.special-page__container
+			.special-page__top-text
+				h1.special-page__h1.main-title Коррекция фигуры
+				p.special-page__text.italic "Через 10 занятий Вы почувтсвуете разницу, через 20 занятий Вы увидите разницу, а через 30 - у Вас будет новое тело"
+				p.special-page__text Эта знаменитая фраза Джозефа Пилатеса была им сказана неслучайно. Уже на первом занятии у человека открываются новые возможности тела и ощущение подтянутости.
+				p.special-page__text.bold Как часто нужно тренироваться, чтобы получить фигуру своей мечты?
+				p.special-page__text Регулярно. А точнее Вам скажет Ваше тело. Обычно мы слушаем и ждем, что нам кто-то скажет, сколько. На практике - все зависит от Вашего желания. От времени, которое Вы хотите себе посвятить. От питания, которого Вы придерживаетесь. От цели, которую хотите достичь.
+				p.special-page__text Мы рекомендуем начинать 3 раза в неделю. Есть более интенсивные программы. Например, подготовка к свадьбе или восстановление после травмы у спортсмена. А если это реабилитационная или коррекционная программа, то формат посещения и задачи меняются.
+			.special-page__img-wrapper
+				img.special-page__img(src='images/special/special_correction.jpg', alt='')
+		.programs__item_button.special-page__button.form-button(onclick="yaCounter50557537.reachGoal('SKIDKA30'); return true;") Записаться

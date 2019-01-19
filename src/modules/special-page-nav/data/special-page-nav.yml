@@ -1,0 +1,29 @@
+---
+    special_page_nav:
+        -
+            text: 'Для мужчин'
+            link: '../special_men/'
+        -
+            text: 'Для мужчин'
+            link: '../special_men/'
+        -
+            text: 'Для мужчин'
+            link: '../special_men/'
+        -
+            text: 'Для мужчин'
+            link: '../special_men/'
+        -
+            text: 'Для беременных'
+            link: '../special_pregnant/'
+        -
+            text: 'Коррекция фигуры'
+            link: '../special_correction/'
+        -
+            text: 'Спортсменам'
+            link: '../special_sport/'
+        -
+            text: 'Танцорам'
+            link: '../special_dancers/'
+        -
+            text: 'При недержании'
+            link: '../special_ups/'

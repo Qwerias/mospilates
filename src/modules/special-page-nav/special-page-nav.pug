@@ -1,0 +1,10 @@
+mixin special-page-nav(data, active_name)
+	.special-page__nav
+		ul.special-page__nav_list
+			each item in data
+				if (active_name.toLowerCase() === item.text.toLowerCase())
+					li.special-page__nav_item
+						span.special-page__nav_link.special-page__nav_link--active= item.text
+				else
+					li.special-page__nav_item
+						a.special-page__nav_link(href=item.link)= item.text

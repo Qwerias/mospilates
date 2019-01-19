@@ -1,0 +1,229 @@
+@require '../../css/partials/_params.styl'
+@require '../../css/partials/_mixins.styl'
+
+.header
+	width 100%
+	background-color #fff
+	border-bottom 1px solid #b2b2b2
+	&__content
+		padding 30px 35px
+		flex(column, $ai: stretch)
+		flex-wrap wrap
+	&__logo_img
+		display block
+	&__phone
+		//background-color #04afda
+		font-size 18px
+		//link(#fff)
+		flex(column, center)
+		letter-spacing 0.5px
+		&_button
+			background-color #04afda
+			font-size 18px
+			padding 10px 15px 9px
+			color #fff
+			border-radius 5px
+			cursor pointer
+			border 1px solid #04afda
+			transition .3s all
+			width 100%
+			text-align: center
+			text-transform uppercase
+			line-height: 1
+			margin-top 10px
+			&:hover
+				background-color #fff
+				color #04afda
+		&_number
+			link(#000)
+	&__top
+		flex()
+		margin-bottom 10px
+		height 64px
+	&__menu
+		flex($ai: flex-end)
+		line-height: 1.3
+		&_content
+			width 100%
+			height 100%
+			display none
+		&_whatsapp
+			display none
+	&__contacts
+		width 60%
+		height 100%
+		flex()
+		&_container
+			flex(column, flex-end , flex-start)
+			height 100%
+		&_link
+			link(#02b2dd)
+			&:hover
+				text-decoration underline
+			&:first-child
+				margin-bottom 3px
+	&__time
+		&_whatsapp
+			margin-bottom 10px
+		&_text_span
+			&:first-child
+				margin-bottom 3px
+
+@media screen and (max-width $view-port-xl)
+	.header
+		&__contacts
+			width 67%
+
+@media screen and (max-width $view-port-large)
+	.header
+		&__contacts
+			width 75%
+
+@media screen and (max-width 870px)
+	.header
+		&__menu_content
+			background-color #02b2dd
+			display flex
+
+@media screen and (max-width 870px)
+	.header
+		&__contacts
+			width 75%
+		&__content
+			padding-bottom 0
+		&__menu
+			order 3
+			width 100%
+			margin 0 auto
+			position relative
+			height 50px
+			&_img
+				width 30px
+			&_content
+				flex($ai: center)
+				padding-left 30px
+				background-color #02b2dd
+				color #fff
+				cursor pointer
+				&:before
+					width $padding-tablet
+					margin-left $padding-tablet * -1
+					content ''
+					display block
+					position absolute
+					left 0
+					top 0
+					bottom 0
+					background-color #02b2dd
+				&:after
+					width $padding-tablet
+					margin-right $padding-tablet * -1
+					content ''
+					display block
+					position absolute
+					right 0
+					top 0
+					bottom 0
+					background-color #02b2dd
+
+@media screen and (max-width $view-port-tablet)
+	.header
+		&__top
+			height 150px
+			flex-direction column
+		&__logo
+			align-self flex-start
+		&__contacts
+			width 100%
+			&_container
+				height auto
+				justify-content center
+		&__time
+			&_whatsapp
+				display none
+		&__phone
+			&_button
+				margin-top 5px
+		&__menu
+			background-color #04afda
+			&_content
+				width auto
+				&:before
+					width $padding-medium
+					margin-left $padding-medium * -1
+				&:after
+					width $padding-medium
+					margin-right $padding-medium * -1
+			&_whatsapp
+				flex()
+				color #fff
+				width 212px
+				height 100%
+				background-color #04afda
+				position relative
+				letter-spacing 0.5px
+				&:before
+					position absolute
+					left -15px
+					top 0
+					bottom 0
+					display block
+					content ''
+					width 1px
+					height 70%
+					margin auto
+					background-color #fff
+
+@media screen and (max-width $view-port-medium)
+	.header
+		&__logo
+			align-self: center
+		&__logo_img
+			width auto
+		&__top
+			flex-direction column
+			margin-bottom 20px
+		&__contacts
+			margin-top 20px
+			width 100%
+		&__time
+			order 3
+		&__phone
+			order 2
+		&__menu_content
+			padding-left 0
+			&:before
+				width $padding-mob
+				margin-left $padding-mob * -1
+			&:after
+				width $padding-mob
+				margin-right $padding-mob * -1
+
+@media screen and (max-width $view-port-mob)
+	.header
+		&__top
+			margin-bottom 15px
+			height auto
+		&__content
+			padding-top 15px
+		&__contacts
+			flex-direction column
+			align-items center
+			&_container
+				margin-bottom 10px
+				align-items center
+		&__phone
+			margin-bottom 10px
+			order 3
+		&__time
+			text-align center
+			order 2
+			margin-bottom 15px
+		&__menu
+			&_content
+				&:before
+					width $padding-sm
+					margin-left $padding-sm * -1
+				&:after
+					width $padding-sm
+					margin-right $padding-sm * -1

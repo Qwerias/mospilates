@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="address=no" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet"><script src="libs/jquery.min.js" defer="defer"></script>
+        <link rel="stylesheet" href="libs/slick/slick.css" />
+        <link rel="stylesheet" href="libs/slick/slick-theme.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" /><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script><script src="libs/slick/slick.min.js" defer="defer"></script><script src="js/script.js" defer="defer"></script>
+        <title>Allegro</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content view-port">
+                <div class="header__top">
+                    <a class="header__logo" href="/">
+                        <img class="header__logo_img" src="images/logo.svg" alt="Логотип" />
+                    </a>
+                    <div class="header__contacts">
+                        <div class="header__contacts_container">
+                            <a class="header__contacts_link" href="http://maps.yandex.ru/?text=55.665264, 37.471866" target="_blank">Мы на карте</a>
+                            <a class="header__contacts_link" href="mailto:info@mospilates.ru">info@mospilates.ru</a>
+                        </div>
+                        <div class="header__time">
+                            <div class="header__time_whatsapp">whatsapp: +7 999 879-20-58</div>
+                            <div class="header__time_text">
+                                <div class="header__time_text_span">пн-пт: 9:00-22:00</div>
+                                <div class="header__time_text_span">сб-вс: 10:00-20:00</div>
+                            </div>
+                        </div>
+                        <div class="header__phone">
+                            <a class="header__phone_number" href="tel:+74954381001">+7 495 438-10-01</a>
+                            <div class="header__phone_button form-button">Записаться</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu_content">
+                        <img class="header__menu_img" src="images/menu.png" alt="Меню" />
+                    </div>
+                    <div class="header__menu_whatsapp">whatsapp: +7 999 879-20-58</div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="/">Главная
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../timetable/">Расписание
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../programs/">Программы
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../prices/">Цены
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../trainers/">Тренеры
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../special_men/">Специализация
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link" href="../contacts/">Контакты
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__item_link nav__item_link_small" href="../rules/">Диагностическая тренировка
+                                    <div class="nav__underline"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="special-page view-port main-padding">
+            <div class="special-page__title main-title">Специальные программы</div>
+            <div class="special-page__nav">
+                <ul class="special-page__nav_list">
+                    <li class="special-page__nav_item">
+                        <span class="special-page__nav_link special-page__nav_link--active">Для мужчин</span>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <span class="special-page__nav_link special-page__nav_link--active">Для мужчин</span>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <span class="special-page__nav_link special-page__nav_link--active">Для мужчин</span>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <span class="special-page__nav_link special-page__nav_link--active">Для мужчин</span>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_pregnant/">Для беременных</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_correction/">Коррекция фигуры</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_sport/">Спортсменам</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_dancers/">Танцорам</a>
+                    </li>
+                    <li class="special-page__nav_item">
+                        <a class="special-page__nav_link" href="../special_ups/">При недержании</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="special-page__container">
+                <div class="special-page__top-text">
+                    <h1 class="special-page__h1 main-title">Пилатес для мужчин</h1>
+                    <p class="special-page__text">Немного истории о том, что метод был созд​ан мужчиной и для мужчин</p>
+                    <p class="special-page__text">Когда началась Первая Мировая Война, Джо находился в Англии в боксерском туре. В течение войны его держали в лагере для интернированных, недалеко от Ланкстера, как подданного другого государства постоянно проживающего в Англии. Пока
+                        он находился в лагере, то ежедневно тренировал своих соратников. Во время эпидемии гриппа 1918-1919 годов, ни один из его соратников, с кем он занимался, не заболел. Успехи Джо были замечены и его перевели на работу санитара в
+                        госпиталь на острове Мэн. Ему дали 30 пациентов, травмированных в военных действих, и он ежедневно тренировал их, чтобы они могли двигать тем, что у них осталось. Это происходило в годы, когда западная медицина была в зачаточном
+                        периоде и основными способами лечения были ампутации и морфий. В то время, лечение предполагало длительное восстановление лежа, что вело к атрофии мышц, снижению аэробных возможностей и ухудшению иммунитета. Упражнения Джо помогали
+                        пациентам быстрее восстанавливаться и противостоять повторным инфекциям, которые при прочих равных условиях, убили множество людей.</p>
+                </div>
+                <div class="special-page__img-wrapper">
+                    <img class="special-page__img" src="images/special/special_men.jpg" alt="">
+                </div>
+            </div>
+            <p class="special-page__text">Работа санитара также привела Джо к разработке первого оборудования. Ежедневная работа с тридцатью пациентами была изматывающей, поэтому Джо пришел к идее прикрепления пружин непосредственно к их кроватям. Теперь пациенты могли тренироваться
+                сами, под контролем Джо. Когда Джо отпустили из лагеря, с ним завязали контакты "коричневые рубашки" (которые позже стали партией нацистов). Они хотели, чтобы он тренировал их полицию. Джо не хотел иметь с ними ничего общего, поэтому он
+                покинул Германию.</p>
+            <p class="special-page__text">Какие же преимущества от тренировок по методу Джозефа могут получить мужчины? Мужчины отличаются от женщин физически, но им требуются те же преимущества от упражнений, что и женщинам. Мужчины, которые тренируются регулярно, необычайно сильны,
+                но их мышцы чаще всего укорочены и зажаты. Поэтому во время фитнес-тестирования им достаточно сложно сидеть с вытянутыми вперед ногами. У мужчин меньше таз, более крепкие ягодицы и, обычно, жестче задняя поверхность бедер, чем у женщин.
+                Такое ограничение ведет к болям в пояснице в какой-то момент их жизни.</p>
+            <p class="special-page__text">Ответ есть - это пилатес - расслабляет зажатые зоны, делает мышцы и суставы более функциональными для повседневной жизни, без ограничений.</p>
+            <p class="special-page__text">Пилатес тренирует 7 ключевых факторов:
+                <br>— осанку
+                <br>— баланс
+                <br>— стабильность
+                <br>— гибкость
+                <br>— координацию
+                <br>— выносливость
+                <br>— функциональную силу</p>
+            <p class="special-page__text">Для мужчин за 50, заболевания простаты являются очень распространенными. Исследования показывают, что главным факторм является - атрофия(износ) мышц тазового дна. Занимаясь по методу Пилатеса, эти мышцы можно укрепить, и, как результат, снизить
+                риск возникновения заболеваний. Пилатес доказал свою причастность к улучшению сексуальной функции. То есть, можно повысить качество жизни и в этой сфере.</p>
+            <p class="special-page__text">Занятия для мужчин отличаются от занятий для женщин. Для мужчин здесь есть взрывная сила для увеличения амплитуды и гибкость, а также силы и увеличения энергии.</p>
+            <div class="programs__item_button special-page__button form-button" onclick="yaCounter50557537.reachGoal('SKIDKA30'); return true;">Записаться</div>
+        </div>
+        <footer class="footer">
+            <div class="footer__content view-port">
+                <div class="footer__rights">© Студия Пилатеса Аллегро 2018</div>
+                <div class="footer__join-us">
+                    <div class="footer__join-us_text">Присоединяйтесь к нам:</div>
+                    <div class="footer__links">
+                        <a class="footer__links_link" href="https://instagram.com/pilatesstudio_allegro" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="footer__links_link" href="https://www.facebook.com/mospilates/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
